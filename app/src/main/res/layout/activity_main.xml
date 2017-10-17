@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dangerouspermissions.medsamimejri.net.dangerouspermissions.MainActivity">
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:onClick="CameraPermission"
+        android:text="Camera Permission" />
+
+    <Button
+        android:id="@+id/btnStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCamera"
+        android:layout_alignStart="@+id/btnCamera"
+        android:layout_below="@+id/btnCamera"
+        android:layout_marginTop="76dp"
+        android:onClick="StoragePermission"
+        android:text="STORAGE PERMISSION" />
+
+    <Button
+        android:id="@+id/btnContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnStorage"
+        android:layout_alignStart="@+id/btnStorage"
+        android:layout_below="@+id/btnStorage"
+        android:layout_marginTop="82dp"
+        android:onClick="ContactPermission"
+        android:text="CONTACTS PERMISSION" />
+
+</RelativeLayout>
